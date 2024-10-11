@@ -4,7 +4,7 @@ on:
   push:
     branches: ['master']
     tags: 
-        - '*.*.*-jh4j'
+        - '*.*.*-citicsteel'
 
 jobs:
   build-and-push-image:
@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - version: 3.1.0-jh4j
+          - version: 3.1.0-citicsteel
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
